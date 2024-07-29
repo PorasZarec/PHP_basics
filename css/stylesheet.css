@@ -1,0 +1,56 @@
+/* Resetting margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full height for the body to center content vertically */
+html, body {
+    height: 100%;
+    margin: 0; /* Ensure no extra margin around the body */
+}
+
+/* Flex container to center content */
+body {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    font-family: Arial, sans-serif; /* Optional: set a font for better appearance */
+    background-color: #f4f4f4; /* Optional: set a background color */
+}
+
+/* Styling for form elements */
+form {
+    display: flex;
+    flex-direction: column; /* Arrange form elements in a column */
+    gap: 10px; /* Space between form elements */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ccc; /* Border around the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    background-color: #fff; /* Background color for the form */
+}
+
+/* Styling for input fields and button */
+input, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for headings */
+h3 {
+    margin-bottom: 20px; /* Space between heading and form */
+    color: #333; /* Heading color */
+}
