@@ -1,5 +1,6 @@
 <?php
-
+    require_once "include/config_session.inc.php";
+    require_once "include/signup_view.inc.php";
 ?>
 
 <!DOCTYPE html>
@@ -12,19 +13,23 @@
 </head>
 <body>
     <h3>Login</h3>
-    <form action="include/formhandler.inc.php" method="post">
+    <form action="include/login.inc.php" method="post">
         <input type="text" name="username" placeholder="Username">
         <input type="password" name="pwd" placeholder="Password">
         <button>Login</button>
     </form>
 
     <h3>Signup</h3>
-    <form action="include/formhandler.inc.php" method="post">
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="pwd" placeholder="Password">
-        <input type="text" name="email" placeholder="E-mail">
+    <form action="include/signup.inc.php" method="post">
+        <?php
+            signup_input();
+        ?>
         <button>Signup</button>
     </form>
+
+    <?php
+        check_signup_errors();
+    ?>
 
 </body>
 </html>
