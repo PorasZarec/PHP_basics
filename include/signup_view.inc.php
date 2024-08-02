@@ -5,9 +5,9 @@ declare(strict_types=1);
 
 function signup_input() {
     // Debugging statements
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
+    // echo '<pre>';
+    // print_r($_SESSION);
+    // echo '</pre>';
 
     // Username input
     if (isset($_SESSION['signup_data']['username']) && !isset($_SESSION['errors_signup']['username_taken'])) {
